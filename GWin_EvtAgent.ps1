@@ -1,0 +1,2 @@
+$EvtWatcher = [System.Diagnostics.Eventing.Reader.EventLogWatcher]::new([System.Diagnostics.Eventing.Reader.EventLogQuery]::new("security",[System.Diagnostics.Eventing.Reader.PathType]::LogName,"*[System/EventID=4688]"))
+$EvtWatcher.Enabled = $true
